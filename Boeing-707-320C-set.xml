@@ -106,4 +106,28 @@
         </icao>
     </aircraft>
 
+<input>
+    <keyboard>
+        <key n="119">
+            <name>w</name>
+            <desc>Walk forward toward view</desc>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>walk.walk_about(0.1)</script>
+            </binding>
+        </key>
+
+        <key n="87">
+            <name>W</name>
+            <desc>Walk backward from view</desc>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>walk.walk_about(-0.1)</script>
+            </binding>
+        </key>
+    </keyboard>
+</input>
+
 </PropertyList>
