@@ -4,8 +4,6 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
-<!-- Boeing 707 for FlightGear. -->
-
 <fileheader>
     <author>Megaf - [mmegaf@gmail.com] [https://flightgear-republic.org]</author>
     <filecreationdate>07/03/2021</filecreationdate>
@@ -70,8 +68,5 @@
     </tableData>
     </table>
 </function>
-
 </turbine_engine>
-
-
 </fdm_config>
