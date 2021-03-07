@@ -11,6 +11,82 @@
     <description>Boeing 707 for FlightGear</description>
 </fileheader>
 
+<metrics>
+    <wingarea unit="FT2">3050</wingarea>
+    <wingspan unit="FT">145.9</wingspan>
+</metrics>
+
+<mass_balance>
+    <emptywt unit="LBS">148300</emptywt>
+</mass_balance>
+
+<!-- contact types "inspired" by FGAddons 707 -->
+<ground_reactions>
+    <contact type="BOGEY" name="NOSE">
+        <location unit="IN">
+            <x>-618.44</x>
+            <y>0.00</y>
+            <z>-114.00</z>
+        </location>
+
+        <static_friction>0.55</static_friction>
+        <dynamic_friction>0.50</dynamic_friction>
+        <rolling_friction>0.02</rolling_friction>
+        <spring_coeff unit="LBS/FT">90000</spring_coeff>
+        <damping_coeff unit="LBS/FT/SEC">6000</damping_coeff>
+        <damping_coeff_rebound unit="LBS/FT/SEC">12000</damping_coeff_rebound>
+
+        <relaxation_velocity>
+            <rolling unit="FT/SEC">0.6</rolling>
+            <side unit="FT/SEC">0.6</side>
+        </relaxation_velocity>
+
+        <force_lag_filter>
+            <rolling>120.0</rolling>
+            <side>120.0</side>
+        </force_lag_filter>
+        
+        <wheel_slip_filter>120.0</wheel_slip_filter>
+        <max_steer unit="DEG">35</max_steer>
+        <brake_group> NONE </brake_group>
+        <retractable>1</retractable>
+    </contact>
+
+    <contact type="BOGEY" name="LEFT_MAIN">
+        <location unit="IN">
+            <x>71.65</x>
+            <y>-98.81</y>
+            <z>-116.3</z>
+        </location>
+
+        <static_friction>0.55</static_friction>
+        <dynamic_friction>0.70</dynamic_friction>
+        <rolling_friction>0.04</rolling_friction>
+        <spring_coeff unit="LBS/FT">230000.00</spring_coeff>
+        <damping_coeff unit="LBS/FT/SEC">140000.00</damping_coeff>
+        <max_steer unit="DEG">0</max_steer>
+        <brake_group>LEFT</brake_group>
+        <retractable>1</retractable>
+    </contact>
+
+    <contact type="BOGEY" name="RIGHT_MAIN">
+        <location unit="IN">
+            <x>71.65</x>
+            <y>98.81</y>
+            <z>-116.3</z>
+        </location>
+
+        <static_friction>0.55</static_friction>
+        <dynamic_friction>0.70</dynamic_friction>
+        <rolling_friction>0.04</rolling_friction>
+        <spring_coeff unit="LBS/FT">230000.00</spring_coeff>
+        <damping_coeff unit="LBS/FT/SEC">140000.00</damping_coeff>
+        <max_steer unit="DEG">0</max_steer>
+        <brake_group>RIGHT</brake_group>
+        <retractable>1</retractable>
+    </contact>
+</ground_reactions>
+
 <turbine_engine name="JT3D-1">
     <milthrust>      17.0  </milthrust>
     <bypassratio>     1.0  </bypassratio>
