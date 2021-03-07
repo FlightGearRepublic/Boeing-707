@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
     <sim>
-        <description>Boeing 707-320C.</description>
+        <description>Boeing 707-320C</description>
 
         <long-description>This is the 320C variant of the Boeing 707.
         The 320C is the most popular and most sold variant.
@@ -9,7 +9,7 @@
         a cargo airplane.
         </long-description>
 
-        <aircraft-version>202103071547</aircraft-version>
+        <aircraft-version>202103071800</aircraft-version>
 
         <rating>
             <FDM type="int">1></FDM>
