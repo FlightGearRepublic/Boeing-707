@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="http://jsbsim.sourceforge.net/JSBSim.xsl"?>
-<fdm_config name="Boeing-707" version="2.0" release="ALPHA"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
+
+<ground_reactions>
 
 <!-- contact types "inspired" by FGAddons 707 -->
 <contact type="BOGEY" name="NOSE">
-    <location unit="IN">
-        <x>-618.44</x>
+    <location unit="M">
+        <x>5.31</x>
         <y>0.00</y>
-        <z>-114.00</z>
+        <z>0</z>
     </location>
 
     <static_friction>0.55</static_friction>
@@ -36,10 +34,10 @@
 </contact>
 
 <contact type="BOGEY" name="LEFT_MAIN">
-    <location unit="IN">
-        <x>71.65</x>
-        <y>-98.81</y>
-        <z>-116.3</z>
+    <location unit="M">
+        <x>23.89</x>
+        <y>-3.365</y>
+        <z>0</z>
     </location>
 
     <static_friction>0.55</static_friction>
@@ -53,10 +51,10 @@
 </contact>
 
 <contact type="BOGEY" name="RIGHT_MAIN">
-    <location unit="IN">
-        <x>71.65</x>
-        <y>98.81</y>
-        <z>-116.3</z>
+    <location unit="M">
+        <x>23.89</x>
+        <y>3.365</y>
+        <z>0</z>
     </location>
 
     <static_friction>0.55</static_friction>
@@ -68,3 +66,5 @@
     <brake_group>RIGHT</brake_group>
     <retractable>1</retractable>
 </contact>
+
+</ground_reactions>

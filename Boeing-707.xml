@@ -11,16 +11,12 @@
     <description>Boeing 707 for FlightGear</description>
 </fileheader>
 
-<metrics>
-    <path>FDM/metrics.xml</path>
-</metrics>
+<metrics file="FDM/metrics.xml"/>
 
-<mass_balance>
-    <path>FDM/mass_balance.xml</path>
-</mass_balance>
+<mass_balance file="FDM/mass_balance.xml"/>
 
-<ground_reactions>
-    <path>FDM/ground_reactions.xml</path>
-</ground_reactions>
+<ground_reactions file="FDM/ground_reactions.xml"/>
+
+<aerodynamics/>
 
 </fdm_config>
