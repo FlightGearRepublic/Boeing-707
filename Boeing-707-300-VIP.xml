@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <sim>
+        <description>Boeing 707-300 VIP</description>
+
+        <long-description>
+            This is the 300 variant of the Boeing 707.
+            It has an APU and some other additional features.
+        </long-description>
+
+        <aircraft-version>202103071800</aircraft-version>
+
+        <rating>
+            <FDM type="int">1></FDM>
+            <systems type="int">1</systems>
+            <cockpit type="int">1</cockpit>
+            <model type="int">1></model>
+        </rating>
+
+        <authors>
+            <author n="0">
+                <name>Megaf</name>
+                <description>Creation</description>
+                <nick>MGF87</nick>
+            </author>
+        </authors>
+
+        <maintainers>
+            <maintainer n="0">
+                <name>Megaf</name>
+                <email>mmegaf@mail.com</email>
+            </maintainer>
+        </maintainers>
+
+        <primary-set type="bool">true</primary-set>
+        <variant-of>Boeing-707-320</variant-of>
+
+        <tags>
+            <tag n="0">boeing</tag>
+            <tag n="1">passenger</tag>
+            <tag n="2">jet</tag>
+            <tag n="3">1950s</tag>
+            <tag n="4">low-wing</tag>
+        </tags>
+
+        <urls>
+            <home-page>https://github.com/FlightGearRepublic/Boeing-707/wiki</home-page>
+            <support>https://discord.gg/e27UuJxdtX</support>
+            <wikipedia>https://en.wikipedia.org/wiki/Boeing_707</wikipedia>
+            <code-repository>https://github.com/FlightGearRepublic/Boeing-707</code-repository>
+        </urls>
+
+<!--
+<previews>
+    <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/exterior-1.png</path>
+    </preview>
+
+    <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/exterior-f16a-2.png</path>
+    </preview>
+
+    <preview>
+        <type>panel</type>
+        <splash type="bool">false</splash>
+        <path>Previews/cockpit.png</path>
+    </preview>
+</previews>
+-->
+
+        <flight-model>jsb</flight-model>
+        <aero>Boeing-707</aero>
+
+        <startup>
+            <splash-logo-image>Artwork/707.png</splash-logo-image>
+        </startup>
+
+<!--
+        <model>
+            <path></path>
+        </model>
+
+        <sound>
+            <path></path>
+        </sound>
+
+        <autopilot>
+            <path></path>
+        </autopilot>
+
+        <model>
+            <path></path>
+        </model>
+-->
+    </sim>
+
+    <aircraft>
+        <icao>
+            <wake-turbulence-category>H</wake-turbulence-category>
+            <type type="string">B703</type>
+        </icao>
+    </aircraft>
+
+<input>
+    <keyboard>
+        <key n="119">
+            <name>w</name>
+            <desc>Walk forward toward view</desc>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>walk.walk_about(0.1)</script>
+            </binding>
+        </key>
+
+        <key n="87">
+            <name>W</name>
+            <desc>Walk backward from view</desc>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>walk.walk_about(-0.1)</script>
+            </binding>
+        </key>
+    </keyboard>
+</input>
+
+</PropertyList>
