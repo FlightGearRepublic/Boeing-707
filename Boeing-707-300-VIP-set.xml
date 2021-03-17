@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
     <sim>
-        <description>Boeing 707-320C</description>
+        <description>Boeing 707-300 VIP</description>
 
-        <long-description>This is the 320C variant of the Boeing 707.
-        The 320C is the most popular and most sold variant.
-        It's a passenger version that can be easily converted to
-        a cargo airplane.
+        <long-description>
+            This is the 300 variant of the Boeing 707.
+            It has an APU and some other additional features.
         </long-description>
 
         <aircraft-version>202103071800</aircraft-version>
@@ -33,8 +32,7 @@
             </maintainer>
         </maintainers>
 
-        <primary-set type="bool">true</primary-set>
-        <variant-of>Boeing-707</variant-of>
+        <variant-of>Boeing-707-300</variant-of>
 
         <tags>
             <tag n="0">boeing</tag>
