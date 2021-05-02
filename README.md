@@ -1,6 +1,5 @@
 # Boeing-707
-Boeing 707 for FlightGear
+## Boeing 707 for FlightGear
+### By The FlightGear Republic
 
 A new and improved Boeing 707 model.
-
-It will likely be a -300 series.
